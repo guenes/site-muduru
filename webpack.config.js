@@ -22,17 +22,17 @@ var config = {
 };
 
 var publicScripts = Object.assign({}, config, {
-    entry: "./public/js/src/wp-skeleton-public.js",
+    entry: "./public/js/src/site-muduru-public.js",
     output: {
        path: path.resolve(__dirname, './public/js'),
-       filename: "wp-skeleton-public.js"
+       filename: "site-muduru-public.js"
     },
 });
 var adminScripts = Object.assign({}, config,{
-    entry: "./admin/js/src/wp-skeleton-admin.js",
+    entry: "./admin/js/src/site-muduru-admin.js",
     output: {
        path: path.resolve(__dirname, './admin/js'),
-       filename: "wp-skeleton-admin.js"
+       filename: "site-muduru-admin.js"
     },
 });
 

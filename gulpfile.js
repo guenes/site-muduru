@@ -18,7 +18,7 @@ var del = require('del');
 
 //compiles public css from source
 function cssPublicCompile() {
-  return gulp.src('./public/css/src/wp-skeleton-public.css') //source
+  return gulp.src('./public/css/src/site-muduru-public.css') //source
   .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer]))
   .on('error', function(errorInfo) {
     console.log(errorInfo.toString());
@@ -29,7 +29,7 @@ function cssPublicCompile() {
 
 //compiles admin css from source
 function cssAdminCompile() {
-  return gulp.src('./admin/css/src/wp-skeleton-admin.css') //source
+  return gulp.src('./admin/css/src/site-muduru-admin.css') //source
   .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer]))
   .on('error', function(errorInfo) {
     console.log(errorInfo.toString());
@@ -40,13 +40,13 @@ function cssAdminCompile() {
 
 //injects public css from source
 function cssPublicInject() {
-  return gulp.src('./public/css/wp-skeleton-public.css')
+  return gulp.src('./public/css/site-muduru-public.css')
   .pipe(browserSync.stream());
 }
 
 //injects admin css from source
 function cssAdminInject() {
-  return gulp.src('./admin/css/wp-skeleton-admin.css')
+  return gulp.src('./admin/css/site-muduru-admin.css')
   .pipe(browserSync.stream());
 }
 
@@ -103,7 +103,7 @@ gulp.task('watch', gulp.parallel(browser_sync, watch_files));
 //trigger manually by running gulp minify
 
 function minify_public_css() {
-  return gulp.src('./public/css/wp-skeleton-public.css')
+  return gulp.src('./public/css/site-muduru-public.css')
         .pipe(cssnano())
         .pipe(rename({
             suffix: '.min'
@@ -112,7 +112,7 @@ function minify_public_css() {
 }
 
 function minify_admin_css() {
-  return gulp.src('./admin/css/wp-skeleton-admin.css')
+  return gulp.src('./admin/css/site-muduru-admin.css')
         .pipe(cssnano())
         .pipe(rename({
             suffix: '.min'
@@ -121,7 +121,7 @@ function minify_admin_css() {
 }
 
 function uglify_public_js() {
-  return gulp.src('./public/js/wp-skeleton-public.js')
+  return gulp.src('./public/js/site-muduru-public.js')
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
@@ -130,7 +130,7 @@ function uglify_public_js() {
 }
 
 function uglify_admin_js() {
-  return gulp.src('./admin/js/wp-skeleton-admin.js')
+  return gulp.src('./admin/js/site-muduru-admin.js')
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
