@@ -28,5 +28,16 @@
     "postcss-simple-vars": "^5.0.2",
     "webpack": "^4.29.6"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guenes/site-muduru.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "bugs": {
+    "url": "https://github.com/guenes/site-muduru/issues"
+  },
+  "homepage": "https://github.com/guenes/site-muduru#readme"
 }
