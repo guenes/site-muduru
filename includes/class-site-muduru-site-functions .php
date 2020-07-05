@@ -83,7 +83,7 @@ function site_muduru_register_custom_nav()
 function site_muduru_add_post_types_to_query($query)
 {
 	if (is_home() && $query->is_main_query())
-		$query->set('post_type', array('post', 'flugblatt', 'heft'));
+		$query->set('post_type', array('post', 'buch', 'heft'));
 	return $query;
 }
 
@@ -111,12 +111,5 @@ function site_muduru_add_image_size()
 	register_taxonomy_for_object_type( 'category', 'attachment' );
 	}
 
-	/***********************************************************************************
-	 * add_post_type_support Class name of the subtitle plugin
-	 **********************************************************************************
-	 */
-	function site_muduru_wp_subtitle_page_part_support() {
-	add_post_type_support( 'publikation', 'gw-subtitel' );
-	}
 
 }
