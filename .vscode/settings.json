@@ -1,27 +1,29 @@
 {
-    "folders": [
-        {
-            "path": "."
+    "phpcs.composerJsonPath": "/home/debadmin/devpro/wpdev/wp-content/plugins/site-muduru/composer.json",
+    "phpcs.executablePath": "/home/debadmin/.composer/vendor/bin/phpcs",
+    "phpcbf.executablePath": "/home/debadmin/.composer/vendor/bin/phpcbf",
+    "phpcs.enable": true,
+    "editor.formatOnSave": true,
+    "phpcbf.onsave": true,
+    "phpcbf.debug": true,
+    "phpcs.standard": "WordPressVIPMinimum",
+    "phpcs.showWarnings": true,
+    "eslint.options": {
+        "rules": {
+            "no-unused-vars": "off",
         }
-    ],
-    "remoteAuthority": "wsl+Debian",
-    "settings": {
-        "phpcs.enable": true,
-        "phpcs.standard": "WordPressVIPMinimum",
-        "phpcs.showWarnings": false,
-        "phpcs.executablePath": "/home/debadmin/.composer/vendor/bin/phpcs",
-        "eslint.options": {
-            "rules": {
-                "no-unused-vars": "off",
-            }
-        },
-        "intelephense.stubs": [
-            "wordpress",
-        ],
     },
+    "intelephense.stubs": [
+        "wordpress",
+    ],
     "files.autoSave": "afterDelay",
     "intelephense.format.enable": false,
-    "editor.renderWhitespace": "none",
-    "prettier.stylelintIntegration": true,
-    "editor.formatOnSave": true
+    "editor.renderWhitespace": "all",
+    // "prettier.stylelintIntegration": true,
+    "phpcbf.documentFormattingProvider": true,
+    "phpcbf.enable": true,
+    "phpcbf.standard": "WordPressVIPMinimum",
+    "[php]": {
+        "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+    }
 }

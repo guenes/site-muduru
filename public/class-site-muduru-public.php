@@ -31,7 +31,7 @@ class site_muduru_Public
 	public function enqueue_styles()
 	{
 		wp_enqueue_style( $this->site_muduru, plugin_dir_url( __FILE__ ) . 'css/site-muduru-public.css', array(), $this->version, 'all' );
-		wp_enqueue_style( $this->site_muduru, plugin_dir_url( __FILE__ ) . 'css/site-muduru-font-awesome.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'site-muduru-fontawesom', plugin_dir_url( __FILE__ ) . 'css/site-muduru-font-awesome.min.css', array(), $this->version, 'all' );
 	}
 
 	// Register and enqueue the public js
