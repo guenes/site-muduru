@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://wsl+debian/home/debadmin/devpro/wpdev/wp-content/plugins/site-muduru"
+		}
+	],
+	"remoteAuthority": "wsl+Debian",
+	"settings": {
+		"phpcs.composerJsonPath": "/home/debadmin/devpro/wpdev/wp-content/plugins/site-muduru/composer.json",
+	}
+}
