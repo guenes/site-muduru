@@ -1,2 +1,27 @@
 {
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "remoteAuthority": "wsl+Debian",
+    "settings": {
+        "phpcs.enable": true,
+        "phpcs.standard": "WordPressVIPMinimum",
+        "phpcs.showWarnings": false,
+        "phpcs.executablePath": "/home/debadmin/.composer/vendor/bin/phpcs",
+        "eslint.options": {
+            "rules": {
+                "no-unused-vars": "off",
+            }
+        },
+        "intelephense.stubs": [
+            "wordpress",
+        ],
+    },
+    "files.autoSave": "afterDelay",
+    "intelephense.format.enable": false,
+    "editor.renderWhitespace": "none",
+    "prettier.stylelintIntegration": true,
+    "editor.formatOnSave": true
 }
