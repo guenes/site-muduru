@@ -11,7 +11,7 @@
  */
 
 // The admin functionality of the plugin
-class site_muduru_Admin
+class Site_Muduru_Admin
 {
 
 	// WP Skeleton - string

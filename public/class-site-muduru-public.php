@@ -10,7 +10,7 @@
  */
 
 // The public functionality of the plugin
-class site_muduru_Public
+class Site_Muduru_Public
 {
 
 	// WP Skeleton - string

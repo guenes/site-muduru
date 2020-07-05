@@ -10,7 +10,7 @@
  * @subpackage site_muduru/includes
  */
 
-class site_muduru_Deactivator
+class Site_Muduru_Deactivator
 {
 
 	//Runs on deactivation

@@ -9,7 +9,7 @@
  * @subpackage site_mudur/includes
  **/
 
-class site_muduru_site_collection {
+class Site_Muduru_site_collection {
 
 	private $site_muduru;
 	private $version;

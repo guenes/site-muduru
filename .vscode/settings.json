@@ -3,7 +3,6 @@
     "phpcs.executablePath": "/home/debadmin/.composer/vendor/bin/phpcs",
     "phpcbf.executablePath": "/home/debadmin/.composer/vendor/bin/phpcbf",
     "phpcs.enable": true,
-    "editor.formatOnSave": true,
     "phpcbf.onsave": true,
     "phpcbf.debug": true,
     "phpcs.standard": "WordPressVIPMinimum",
@@ -15,15 +14,37 @@
     },
     "intelephense.stubs": [
         "wordpress",
+        "standard",
+        "xml",
+        "xmlreader",
+        "xmlrpc",
+        "xmlwriter",
+        "xsl",
+        "Core",
     ],
     "files.autoSave": "afterDelay",
     "intelephense.format.enable": false,
     "editor.renderWhitespace": "all",
-    // "prettier.stylelintIntegration": true,
     "phpcbf.documentFormattingProvider": true,
     "phpcbf.enable": true,
-    "phpcbf.standard": "WordPressVIPMinimum",
+    "phpcbf.standard": "WordPress-Core",
     "[php]": {
-        "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
-    }
+        "editor.defaultFormatter": "persoderlind.vscode-phpcbf",
+        "editor.formatOnSave": true,
+    },
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "stylelint.enable": true,
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "intelephense.files.exclude": [
+        "**/vendor/**",
+        "**/build/**",
+        "**/packages/**",
+        "**/node_modules/**",
+        "**/wp-includes/**",
+        "**/wp-admin/**"
+    ],
+    "editor.formatOnSave": false,
 }

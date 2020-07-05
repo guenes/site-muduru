@@ -10,7 +10,7 @@
  * @subpackage site_muduru/includes
  */
 
-class site_muduru_Loader
+class Site_Muduru_Loader
 {
 
 	//The array of actions

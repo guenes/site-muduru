@@ -10,7 +10,7 @@
  * @subpackage site_muduru/includes
  */
 
-class site_muduru_i18n
+class Site_Muduru_i18n
 {
 
 	public function load_plugin_textdomain()

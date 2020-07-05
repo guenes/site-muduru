@@ -11,14 +11,13 @@
  */
 
 
-class site_muduru_Updater
-{
-  //Runs on activation
-  public static function update()
-  {
-    if (SITE_MUDURU_VERSION !== get_option('site_muduru_version')) {
-      //update_option( 'site_muduru_version', site_muduru_VERSION );
-      //do stuff on plugin update
-    }
-  }
+class Site_Muduru_Updater {
+
+	//Runs on activation
+	public static function update() {
+		if ( SITE_MUDURU_VERSION !== get_option( 'site_muduru_version' ) ) {
+			//update_option( 'site_muduru_version', site_muduru_VERSION );
+			//do stuff on plugin update
+		}
+	}
 }

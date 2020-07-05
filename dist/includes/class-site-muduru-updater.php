@@ -11,7 +11,7 @@
  */
 
 
-class site_muduru_Updater
+class Site_Muduru_Updater
 {
   //Runs on activation
   public static function update()

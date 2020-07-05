@@ -10,7 +10,7 @@
  */
 
 // Defines internationalization, admin-specific hooks and public hooks
-class site_muduru
+class Site_Muduru
 {
 	protected $loader;
 	protected $site_muduru;

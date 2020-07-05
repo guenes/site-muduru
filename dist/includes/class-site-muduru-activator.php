@@ -11,7 +11,7 @@
  */
 
 
-class site_muduru_Activator
+class Site_Muduru_Activator
 {
 	//Runs on activation
 	public static function activate()

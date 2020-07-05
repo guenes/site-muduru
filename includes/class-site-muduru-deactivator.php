@@ -10,11 +10,9 @@
  * @subpackage site_muduru/includes
  */
 
-class site_muduru_Deactivator
-{
+class Site_Muduru_Deactivator {
+
 
 	//Runs on deactivation
-	public static function deactivate()
-	{
-	}
+	public static function deactivate() {   }
 }

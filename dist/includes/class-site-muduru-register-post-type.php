@@ -9,7 +9,7 @@
  * @subpackage site_muduru/includes
  */
 
-class site_muduru_Register_Post_Types {
+class Site_Muduru_Register_Post_Types {
 	private $site_muduru;
 	private $version;
 
