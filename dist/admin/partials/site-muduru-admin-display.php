@@ -8,7 +8,7 @@
  *
  * @package    site_muduru
  * @subpackage site_muduru/admin/partials
- */
+ * /
 ?>
 
 <!-- Template starts here -->

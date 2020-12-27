@@ -1,43 +1,7 @@
 {
-  "name": "debadmin/site-muduru",
-  "description": "wordpress plugin",
-  "type": "project",
-  "authors": [
-    {
-      "name": "guenes",
-      "email": "guenes.t@gmail.com"
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
     }
-  ],
-  "minimum-stability": "dev",
-  "require": {},
-  "license": "GPL-3.0-or-later",
-  "require-dev": {
-    "php": ">=7.0",
-    "wp-coding-standards/wpcs": "^2",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.4",
-    "phpunit/phpunit": "^6",
-    "brain/monkey": "^2",
-    "phpcompatibility/php-compatibility": "^9",
-    "giacocorsiglia/wordpress-stubs": "dev-master"
-  },
-  "config": {
-    "platform": {
-      "php": "7.0"
-    }
-  },
-  "scripts": {
-    "install-codestandards": [
-      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
-    ],
-    "phpcbf-dev": "\"vendor/bin/phpcbf\"",
-    "run-phpcbf": [
-      "@phpcbf-dev"
-    ],
-    "phpcs-dev": "\"vendor/bin/phpcs\"",
-    "run-phpcs": [
-      "@phpcs-dev"
-    ],
-    "phpunit-dev": "\"vendor/bin/phpunit\"",
-    "phpunit-integration-dev": "\"vendor/bin/phpunit\" -c \"phpunit.integration.xml.dist\""
-  }
 }
